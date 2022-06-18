@@ -74,7 +74,10 @@
                             <li class="nav-item"><a href="#contact" class="nav-link text-uppercase fw-bold text-light">Contact</a></li>
                         </ul>
         
-                        <button type="button" class="btn btn-outline-light mx-3">Sign Up</button>
+                        <div>
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginmodal">Log in</button>
+                            <button type="button" class="btn btn-outline-light mx-3" data-bs-toggle="modal" data-bs-target="#signupmodal">Sign up</button>
+                        </div>
 
                     </div>
 
@@ -525,7 +528,7 @@
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3700.727098439811!2d96.11266971487068!3d21.945040385509277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6dc4fa6a35e3%3A0xf90b09f267699462!2sHnin%20Si%20Khin!5e0!3m2!1sen!2smm!4v1655306970739!5m2!1sen!2smm" class="maps" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                         <div class="card-footer">
-                            <p>Phone: 09793892358</p>
+                            <p>Phone: 09789995522</p>
                             <p>Email: info@ptt.com</p>
                             <p>Address: No.123, Aungsan St, Mandalay, Myanmar.</p>
                         </div>
@@ -608,12 +611,12 @@
 
                                 <div class="form-group">
                                     <label for="loginemail">Email</label>
-                                    <input type="email" name="loginemail" id="loginemail" class="form-control" placeholder="Enter your email address..."/>
+                                    <input type="email" name="loginemail" id="loginemail" class="form-control" placeholder="Enter your email address..." required/>
                                 </div>
     
                                 <div class="form-group my-3">
                                     <label for="loginpassword">Password</label>
-                                    <input type="password" name="loginpassword" id="loginpassword" class="form-control" placeholder="Enter your password..."/>
+                                    <input type="password" name="loginpassword" id="loginpassword" class="form-control" placeholder="Enter your password..." required/>
                                 </div>
     
                                 <div class="d-flex justify-content-end">
@@ -627,7 +630,7 @@
 
                     </div>
                     <div class="modal-footer">
-                        <p>Not Register! <a href="#">Signup Here</a></p>
+                        <p>Not have a accout! <a href="#" data-bs-toggle="modal" data-bs-target="#signupmodal">Signup Here</a></p>
                     </div>
 
                 </div>
@@ -636,6 +639,59 @@
 
         </div>
         <!-- end get in touch modal -->
+
+        <!-- strat signup modal -->
+        <div id="signupmodal" class="modal fade">
+
+            <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5>Sign up Here</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="col-12">
+                            
+                            <form action="" method="">
+
+                                <div class="form-group">
+                                    <label for="signupemail">Email</label>
+                                    <input type="email" name="signupemail" id="signupemail" class="form-control" placeholder="Enter your email address..." required/>
+                                </div>
+    
+                                <div class="form-group my-3">
+                                    <label for="signuppassword">Password</label>
+                                    <input type="password" name="signuppassword" id="signuppassword" class="form-control" placeholder="Enter your password..." required/>
+                                </div>
+
+                                <div class="form-group my-3">
+                                    <label for="cfmpassword">Confirm Password</label>
+                                    <input type="password" name="cfmpassword" id="cfmpassword" class="form-control" placeholder="Enter your password again..." required/>
+                                </div>
+    
+                                <div class="d-flex justify-content-end">
+                                    <button type="reset" class="btn btn-secondary btn-sm me-3" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Sign Up</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <p>Already have a accout! <a href="#" data-bs-toggle="modal" data-bs-target="#loginmodal">Login here</a></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- end signup modal -->
 
     <!-- End Modal box -->
 
